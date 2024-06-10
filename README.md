@@ -7,6 +7,8 @@ This software is a webapp made in python thanks to flesk and pywebview, and uses
 
 To run this, you can download the release or you can clone this repository and run
 
-`git clone https://github.com/xFr33z3/Universal-Converter.git
+```
+git clone https://github.com/xFr33z3/Universal-Converter.git
 pip install -r requirements
-python main.py`
+python main.py
+```

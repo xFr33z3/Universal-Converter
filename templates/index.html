@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Converter</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/pico.min.css">
+    <link rel="stylesheet" href="static/pico.colors.min.css">
+    <script src="static/jquery.min.js"></script>
+    <script src="static/app.js"></script>
+</head>
+    <body>
+        <main class="container">
+        <hgroup>
+            <h1>Universal Converter</h1>
+            <p>Powered by ffmpeg</p>
+        </hgroup>
+
+        <div class="grid">
+            <div class="container" style="text-align: center;">
+                <h4>Input file</h4>
+                <button onclick="window.location.href='input'" style="width: 100%;">Choose the input file</button>
+                <label for="">{{input_file}}</label>
+            </div>
+            <div class="container" style="text-align: center;">
+                <p>Note: You can convert</p>
+                <li>All Images to all formats</li>
+                <li>All Videos to all formats</li>
+            </div>
+
+        </div>
+        <hr>
+        <div class="grid">
+            <div class="container" style="text-align: center;">
+                <h4>Output file folder</h4>
+                <button onclick="window.location.href='output'" style="width: 100%">Choose the output file folder</button>
+                <label for="">{{output_folder}}</label>
+            </div>
+            <div class="container" style="text-align: center;">
+                <label for="Filename">Choose file extension</label>
+                <form id="convertform" action="http://localhost:5000/convert", method="get" >
+                    <select name="ext" required>
+                        <option selected disabled value="">Select</option>
+                        <option disabled value="">VIDEO TO AUDIO</option>
+                        <option>.wav</option>
+                        <option>.mp3</option>
+                        <option disabled value="">VIDEO TO VIDEO</option>
+                        <option>.mp4</option>
+                        <option>.m4a</option>
+                        <option>.mov</option>
+                        <option>.avi</option>
+                        <option disabled value="">IMAGE TO IMAGE</option>
+                        <option>.png</option>
+                        <option>.jpg</option>
+                        <option>.jpeg</option>
+                        <option>.avif</option>
+                        <option>.bmp</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <footer class="fluid-container" style="display: flex; justify-content: flex-end; flex-direction: column; height: 38vh;">
+            <div style="margin: 0px; width: 100%; bottom:0px; padding: 10px 0px">
+                <div class="grid">
+                    <div class="container" style="text-align: left;">
+                        <p>Made by <a onclick="window.open('https://freezedevelopment.com/')">Freeze</a> with 💓</p>
+                    </div>
+                    <div class="container" style="display: flex; justify-content: center;">
+                    <button form="convertform"  style="width: 100%;">Convert</button>
+                </div>
+                </div>
+            </div>
+        </footer>
+        </main>
+    </body>
+</html>

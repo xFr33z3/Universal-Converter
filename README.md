@@ -5,10 +5,16 @@ This software is a webapp made in python thanks to flesk and pywebview, and uses
 
 ## Usage
 
-To run this, you can download the release or you can clone this repository and run
+### Linux/macOS
+
+To run this, you can clone this repository and run
 
 ```
 git clone https://github.com/xFr33z3/Universal-Converter.git
 pip install -r requirements
 python main.py
 ```
+
+### Windows
+
+I've created a release file for windows that you can download from the releases page.

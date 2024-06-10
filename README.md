@@ -20,3 +20,4 @@ python main.py
 ### Windows
 
 I've created a release file for windows that you can download from the releases page.
+https://github.com/xFr33z3/Universal-Converter/releases/tag/filesconverter
